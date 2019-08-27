@@ -8,12 +8,14 @@
 
     <EditText
         android:id="@+id/edit_peso"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Peso"
         android:layout_centerHorizontal="true"
         android:textSize="80sp"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"/>
 
     <TextView
         android:id="@+id/text_peso"
@@ -28,14 +30,15 @@
 
     <EditText
         android:id="@+id/edit_altura"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Altura"
         android:layout_centerHorizontal="true"
         android:textSize="80sp"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/text_peso"
-        />
+        android:inputType="numberDecimal"
+        android:textAlignment="center"/>
 
     <TextView
         android:id="@+id/text_altura"
@@ -58,8 +61,10 @@
         android:layout_marginTop="50dp"
         android:paddingRight="50dp"
         android:paddingLeft="50dp"
-        android:paddingTop="30dp"
-        android:paddingBottom="30dp"
-        android:textSize="20sp"/>
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"/>
 
 </RelativeLayout>
